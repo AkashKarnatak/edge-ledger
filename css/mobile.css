@@ -1,0 +1,74 @@
+#what .items {
+  display: block;
+}
+
+#what .items .item {
+  display: flex;
+}
+
+#what .items .item i {
+  margin-bottom: 0rem;
+  margin-right: 1.3rem;
+  align-self: center;
+}
+
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar #logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding-top: 0.75rem;
+  }
+
+  #showcase {
+    height: calc(100vh - 98px);
+  }
+
+  #who {
+    display: block;
+  }
+
+  #who #who-img {
+    display: none;
+  }
+
+  #clients .container {
+    padding: 0rem 1rem;
+  }
+
+  #clients .items div {
+    font-size: 0.6rem;
+    padding: 0.25rem;
+  }
+
+  /* #clients .items div:last-child {
+    display: none;
+  } */
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact #map {
+    flex: initial;
+    height: 400px;
+    z-index: 0;
+  }
+}
+
+@media(max-height: 568px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
